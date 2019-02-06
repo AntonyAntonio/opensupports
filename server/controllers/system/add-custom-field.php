@@ -16,6 +16,7 @@ use Respect\Validation\Validator as DataValidator;
  * @apiParam {Number} name Name of the custom field.
  * @apiParam {String} type One of 'text' and 'select'.
  * @apiParam {String} options JSON array of strings with the option names.
+ * @apiParam {String} description Description of the custom field. 
  *
  * @apiUse NO_PERMISSION
  * @apiUse INVALID_NAME

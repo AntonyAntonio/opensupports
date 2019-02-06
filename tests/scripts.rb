@@ -97,4 +97,15 @@ class Scripts
             name: name
         })
     end
+
+    def self.createCustomField(name,type,description)
+        request('/system/add-custom-field', {
+            csrf_userid: $csrf_userid,
+            csrf_token: $csrf_token,
+            name: name,
+            type: type,
+            description: description,
+            options: { "key": "value" },{ "key": "value2" }
+        })
+    end
 end
